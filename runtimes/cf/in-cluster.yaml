@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/cf/*.yaml,runtimes/cf/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml,cf/cf-gitops-runtime.yaml,cf/apps.yaml,cf/argo-hub.yaml}
+        {all-runtimes-all-clusters/*.yaml,all-runtimes-all-clusters/**/*.yaml,runtimes/cf/*.yaml,runtimes/cf/**/*.yaml,control-planes/*.yaml,control-planes/**/*.yaml,cf/cf-gitops-runtime.yaml,cf/apps.yaml}
       recurse: true
     path: resources
     repoURL: >-
