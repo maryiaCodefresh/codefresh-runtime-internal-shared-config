@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: argo-hub
   labels:
-    codefresh.io/entity: 'git-source'
+    codefresh.io/entity: git-source
     codefresh.io/internal: 'false'
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,11 +11,11 @@ spec:
   project: default
   source:
     repoURL: https://github.com/codefresh-io/argo-hub.git
-    path: .
-    targetRevision: main
+    path: ./workflows/
+    targetRevision: HEAD
     directory:
-      include: 'workflows/**/*.yaml'
-      exclude: '**/images/**/*'
+      include: '**/*.yaml'
+      exclude: ''
       recurse: true
   destination:
     namespace: gitops
